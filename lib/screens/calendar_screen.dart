@@ -280,8 +280,9 @@ class _CalendarScreenState extends State<CalendarScreen> {
           (t) => Row(
             children: [
               Icon(
-                t.done ? Icons.check_circle : Icons.circle_outlined,
+                t.done ? Icons.check_box : Icons.check_box_outline_blank,
                 size: 20,
+                color: t.done ? Colors.green : Colors.red,
               ),
               const SizedBox(width: 8),
               Text(t.text),
